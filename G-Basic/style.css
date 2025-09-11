@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: hidden;
+}
+
+#page-1 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+#page-2 {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: greenyellow;
+  overflow: hidden;
+  position: relative;
+}
+
+#page-3 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+#logo {
+  font-size: 35px;
+  font-style: oblique;
+}
+
+#green {
+  color: rgb(157, 241, 31);
+}
+
+#nav-links {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-size: 17px;
+}
+
+#hero {
+  height: 50vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-welcome {
+  font-size: 60px;
+}
+
+#hero-description {
+  font-size: 25px;
+  color: greenyellow;
+}
+
+#scroll-text {
+  font-size: 20vw;
+  white-space: nowrap;
+  display: inline-block;
+  text-transform: uppercase;
+  position: absolute;
+  left: 100%;
+  color: ghostwhite;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  user-select: none;
+  pointer-events: none;
+}
+
+#page-3-intro {
+  font-size: 50px;
+}
