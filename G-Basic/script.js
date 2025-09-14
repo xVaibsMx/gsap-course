@@ -4,6 +4,20 @@ var string = document.querySelector('#string')
 var pathElement = document.querySelector('svg path')
 var originalPath = 'M 10 100 Q 500 100 990 100'
 
+const main = document.querySelector('#main')
+const cursor = document.querySelector('#cursor')
+
+main.addEventListener('mousemove', function (e) {
+  const rect = main.getBoundingClientRect()
+
+  gsap.to(cursor, {
+    x: e.clientX - rect.left,
+    y: e.clientY - rect.top,
+    duration: 1.5,
+    ease: 'back.out',
+  })
+})
+
 string.addEventListener('mousemove', function (e) {
   var rect = string.getBoundingClientRect()
   var relativeY = e.clientY - rect.top

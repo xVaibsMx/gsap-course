@@ -31,6 +31,14 @@ body {
   width: 100%;
   background-color: black;
 }
+#page-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: greenyellow;
+}
 
 nav {
   display: flex;
@@ -88,3 +96,25 @@ nav {
 #page-3-intro {
   font-size: 50px;
 }
+
+#main {
+  height: 500px;
+  width: 800px;
+  background-color: #111;
+  border-radius: 5%;
+  box-shadow: #111;
+  padding: 10px;
+  position: relative;
+}
+
+#cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(0, 0);
+}
+
